@@ -6,6 +6,8 @@ We would like to give students between 12 and 18 early exposures to Natural Lang
 
 The program demonstrates the ability of NLP transforming audio speech to text and here is the guide for installation. So far the program is only working on Win10.
 
+### See the tutourial guidance in Tutorial Guidance.docx
+
 ## Installation Guide For Win10
 
 download the source code by github
@@ -16,12 +18,12 @@ download the source code by github
 
 `cd hackathon`
 
+`cd program`
+
 `pip install -r requirements.txt`
 
 `pipwin install pyaudio`
 
 ## Run the program
-
-`cd program`
 
 `python gui.py`
