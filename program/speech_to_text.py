@@ -137,6 +137,8 @@ def speech_recognize_continuous_from_file(*, input_file_name, output_file_name):
 
 
 
+
+
 def speech_to_text(*, inputfile, outputfile):
     if not file.exists_file(inputfile):
         raise IOError('speech_to_text: audio file not exists: {}'.format(inputfile))
@@ -153,5 +155,4 @@ def speech_to_text(*, inputfile, outputfile):
         raise IOError('speech_to_text: output file type error: {} should be of type txt'.format(outputfile))
 
     speech_recognize_continuous_from_file(input_file_name=inputfile, output_file_name=outputfile)
-
 

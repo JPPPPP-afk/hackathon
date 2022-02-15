@@ -12,7 +12,7 @@ def start():
     if running is not None:
         print('already running')
     else:
-        running = rec.open('temp.wav', 'wb')
+        running = rec.open('Audio/temp.wav', 'wb')
         running.start_recording()
 
 def stop():
@@ -22,8 +22,8 @@ def stop():
         running.stop_recording()
         running.close()
         running = None
-        speech_to_text(inputfile='temp.wav', outputfile='temp_result.txt')
-        with open('temp_result.txt') as f:
+        speech_to_text(inputfile='Audio/temp.wav', outputfile='Audio/temp_result.txt')
+        with open('Audio/temp_result.txt') as f:
             contents = f.read()
         lb = Message(root, 
                 text=contents
@@ -42,7 +42,7 @@ root.resizable(False,False)
 root.title("Voice Recorder")
 root.configure(background="#4a4a4a")
 
-img=Image.open("mic.png")
+img=Image.open('mic.png')
 img = ImageTk.PhotoImage(img)
 root.iconphoto(False, img)
 imgBg = Label(image=img, background="#4a4a4a" )
