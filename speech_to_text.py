@@ -70,14 +70,17 @@ def speech_recognize_once_from_mic():
 
     # Check the result
     if result.reason == speechsdk.ResultReason.RecognizedSpeech:
-        print("Recognized: {}".format(result.text))
+        # print("Recognized: {}".format(result.text))
+        pass
     elif result.reason == speechsdk.ResultReason.NoMatch:
-        print("No speech could be recognized")
+        # print("No speech could be recognized")
+        pass
     elif result.reason == speechsdk.ResultReason.Canceled:
-        cancellation_details = result.cancellation_details
-        print("Speech Recognition canceled: {}".format(cancellation_details.reason))
-        if cancellation_details.reason == speechsdk.CancellationReason.Error:
-            print("Error details: {}".format(cancellation_details.error_details))
+        # cancellation_details = result.cancellation_details
+        # print("Speech Recognition canceled: {}".format(cancellation_details.reason))
+        # if cancellation_details.reason == speechsdk.CancellationReason.Error:
+        #     print("Error details: {}".format(cancellation_details.error_details))
+        pass
     # </SpeechRecognitionWithMicrophone>
 
 
@@ -152,5 +155,3 @@ def speech_to_text(*, inputfile, outputfile):
     speech_recognize_continuous_from_file(input_file_name=inputfile, output_file_name=outputfile)
 
 
-
-speech_to_text(inputfile="AUDIO/aboutSpeechSdk.wav", outputfile="temp_result.txt")
