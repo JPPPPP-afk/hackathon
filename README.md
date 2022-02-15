@@ -1,10 +1,21 @@
-UCL Computer Science Coding Curriculum 2022
-(CC-2022) Hackathon
+# Natural Language Processing
 
-Theme : Natural Language Processing and Speech
+## Installation Guide For Win10
 
+download the source code by github
 
-Requirement : Python 3 and pip installed
+`git clone https://github.com/JPPPPP-afk/hackathon.git`
 
-1. Install the requirements 'pip install -r requirements.txt'
-2. Run the code 'python speech-to-text'
+## Install Prerequists
+
+`cd hackathon`
+
+`pip install -r requirements.txt`
+
+`pipwin install pyaudio`
+
+## Run the program
+
+`cd program`
+
+`python gui.py`
