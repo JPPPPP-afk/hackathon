@@ -7,7 +7,12 @@ We would like to give students between 12 and 18 early exposures to Natural Lang
 The program demonstrates the ability of NLP transforming audio speech to text and here is the guide for installation. So far the program is only working on Win10.
 
 
+
+##
+### Authors : Yufei Gu, Jianping Huang, Haocheng Lin, Steve Hong
+### Youtube Link : https://www.youtube.com/watch?v=2qAY9telpKg
 ### See the web tutourial guidance in Tutorial Guidance.docx
+
 
 
 ## Installation Guide For Win10
@@ -29,8 +34,3 @@ download the source code by github
 ## Run the program
 
 `python gui.py`
-
-
-## Authors : Yufei Gu, Jianping Huang, Haocheng Lin, Steve Hong
-
-## Youtube Link : https://www.youtube.com/watch?v=2qAY9telpKg
